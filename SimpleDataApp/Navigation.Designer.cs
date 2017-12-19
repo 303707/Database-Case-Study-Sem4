@@ -42,6 +42,7 @@
             this.btnGoToAdd.TabIndex = 0;
             this.btnGoToAdd.Text = "Konto hinzufügen";
             this.btnGoToAdd.UseVisualStyleBackColor = true;
+            this.btnGoToAdd.Click += new System.EventHandler(this.btnGoToAdd_Click);
             // 
             // btnGoToFillOrCancel
             // 
@@ -51,6 +52,7 @@
             this.btnGoToFillOrCancel.TabIndex = 1;
             this.btnGoToFillOrCancel.Text = "Auftrag ausfüllen oder stornieren";
             this.btnGoToFillOrCancel.UseVisualStyleBackColor = true;
+            this.btnGoToFillOrCancel.Click += new System.EventHandler(this.btnGoToFillOrCancel_Click);
             // 
             // btnExit
             // 
@@ -60,6 +62,7 @@
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Schliessen";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label1
             // 
@@ -81,6 +84,7 @@
             this.Controls.Add(this.btnGoToAdd);
             this.Name = "Navigation";
             this.Text = "Navigation";
+            this.Load += new System.EventHandler(this.Navigation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
